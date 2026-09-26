@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-09-26T08:19:24.030063+00:00",
+  "thresholds": {
+    "block_rate": 0.5,
+    "rate_limit_hits": 5,
+    "judge_fail_rate": 0.3
+  },
+  "total_requests": 41,
+  "blocked_requests": 22,
+  "block_rate": 0.5365853658536586,
+  "rate_limit_hits": 5,
+  "judge_checks": 0,
+  "judge_fails": 0,
+  "judge_fail_rate": 0.0,
+  "alerts": [
+    {
+      "metric": "block_rate",
+      "value": 0.5366,
+      "threshold": 0.5,
+      "message": "Block rate 54% > 50%: possible attack wave or over-blocking guardrail."
+    },
+    {
+      "metric": "rate_limit_hits",
+      "value": 5.0,
+      "threshold": 5.0,
+      "message": "5 rate-limit hits (threshold 5): a client may be flooding the API."
+    }
+  ],
+  "blocked_by_layer": {
+    "input_guardrail": 17,
+    "rate_limiter": 5
+  },
+  "redacted_responses": 0
+}
